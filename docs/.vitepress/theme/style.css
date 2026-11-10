@@ -94,6 +94,40 @@ h3,
   color: transparent;
 }
 
+/* Hero logo spin — slow, professional rotation (Exa-verified: Chrome Modern
+   Web Guidance + MDN). Transform-only, so it stays on the compositor thread;
+   steady linear loop; the Dusrel sparkle is a symmetrical mark, so a full
+   rotation stays legible. Default is static — the spin opts in only under
+   prefers-reduced-motion: no-preference, and pauses on hover (same pattern
+   as the dusrel.com marquee, WCAG 2.2.2). Both keyframes must carry
+   VitePress's own translate(-50%, -50%) centering: a lone
+   `to { rotate(360deg) }` makes the browser fall back to matrix
+   interpolation against the translated from-state, which drifts the logo
+   and kills the rotation (measured 2026-11-10). */
+@keyframes logo-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.VPHero .VPImage {
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .VPHero .VPImage {
+    animation: logo-spin 24s linear infinite;
+  }
+
+  .VPHero .image:hover .VPImage {
+    animation-play-state: paused;
+  }
+}
+
 /* Visible keyboard focus everywhere (dusrel.com's global :focus-visible
    rule, same 2px #4d90fe ring, light and dark). */
 :focus-visible {
