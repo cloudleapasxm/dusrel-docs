@@ -1,0 +1,37 @@
+# Dusrel Docs — documentation for every Dusrel app and service (English and Hindi).
+
+## English
+
+- https://docs.dusrel.com/about-dusrel/
+- https://docs.dusrel.com/dusrel-apps-overview/
+- https://docs.dusrel.com/dusrel-mail-preview/
+- https://docs.dusrel.com/getting-started-with-dusrel/
+- https://docs.dusrel.com/how-to-build-a-resume-with-resumeforge/
+- https://docs.dusrel.com/how-to-calculate-your-exact-age/
+- https://docs.dusrel.com/how-to-check-password-strength/
+- https://docs.dusrel.com/how-to-count-words-and-characters/
+- https://docs.dusrel.com/how-to-create-a-qr-code/
+- https://docs.dusrel.com/how-to-create-synced-lyrics-lrc-with-ricsline/
+- https://docs.dusrel.com/how-to-generate-a-strong-password/
+- https://docs.dusrel.com/how-to-generate-a-username/
+- https://docs.dusrel.com/how-to-resize-and-compress-images-with-shrinkit/
+- https://docs.dusrel.com/how-to-work-with-pdfs-using-pdf-tools/
+- https://docs.dusrel.com/privacy-on-device/
+
+## Hindi
+
+- https://docs.dusrel.com/hi/about-dusrel/
+- https://docs.dusrel.com/hi/dusrel-apps-overview/
+- https://docs.dusrel.com/hi/dusrel-mail-preview/
+- https://docs.dusrel.com/hi/getting-started-with-dusrel/
+- https://docs.dusrel.com/hi/how-to-build-a-resume-with-resumeforge/
+- https://docs.dusrel.com/hi/how-to-calculate-your-exact-age/
+- https://docs.dusrel.com/hi/how-to-check-password-strength/
+- https://docs.dusrel.com/hi/how-to-count-words-and-characters/
+- https://docs.dusrel.com/hi/how-to-create-a-qr-code/
+- https://docs.dusrel.com/hi/how-to-create-synced-lyrics-lrc-with-ricsline/
+- https://docs.dusrel.com/hi/how-to-generate-a-strong-password/
+- https://docs.dusrel.com/hi/how-to-generate-a-username/
+- https://docs.dusrel.com/hi/how-to-resize-and-compress-images-with-shrinkit/
+- https://docs.dusrel.com/hi/how-to-work-with-pdfs-using-pdf-tools/
+- https://docs.dusrel.com/hi/privacy-on-device/

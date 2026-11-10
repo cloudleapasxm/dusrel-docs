@@ -1,0 +1,63 @@
+# Continuous integration: typecheck + tests + production build.
+#
+# Runs on every pull request and every push to main (docs/config changes only).
+#
+# lastUpdated note: page "Updated" dates (and sitemap lastmod) come from git
+# commit dates, so checkout uses fetch-depth: 0 — a shallow clone would make
+# every page look updated at build time.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/**'
+      - 'tsconfig.json'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/**'
+      - 'tsconfig.json'
+      - '.github/workflows/ci.yml'
+
+# Cancel outdated runs when a new push/PR update lands — only the latest matters.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript check
+        run: npx tsc --noEmit
+
+      - name: Unit tests (Vitest)
+        run: npm test
+
+      - name: Production build
+        run: npm run build
