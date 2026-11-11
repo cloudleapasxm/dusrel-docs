@@ -43,4 +43,4 @@ Dusrel's word counter measures your text as you type — no button to press, no 
 - **Check a limit before you post.** If a platform allows, say, 280 characters, watch the `Characters` card while you edit — or `Characters without spaces` if that platform ignores spaces.
 - **Use it for essays and assignments.** The word count plus the paragraph count together make it easy to check a piece against a required length and structure.
 - **Split long text into paragraphs.** If the paragraph count is lower than you expect, look for places where you pressed Enter only once — the counter needs a blank line to count a new paragraph.
-- **Reading time is an estimate.** It is a useful guide for articles and scripts, but real reading speed varies from person to person.
+- **Reading time is an estimate.** It is a useful guide for articles and scripts, but real reading speed varies from person to person. bb
